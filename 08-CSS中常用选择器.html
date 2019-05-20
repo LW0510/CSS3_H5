@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>伪类和伪元素</title>
+    <style>
+        p {
+            width: 300px;
+            background-color: red;
+        }
+
+        /* 伪元素*/
+        p::first-letter {
+            font-size: 100px;
+            color: green;
+        }
+
+        p::first-line {
+            font-size: 30px;
+            color: yellow;
+        }
+
+        /*伪类*/
+        p.test1:hover{
+            width: 600px;
+            background-color: blue;
+        }
+
+        input:focus{
+            width: 500px;
+        }
+    </style>
+</head>
+<body>
+<p class="test1">我是段落我是段落我是段落我是段落我是段落我是段落我是段落我是段落我是段落我是段落我是段落我是段落我是段落我是段落我是段落
+    我是段落我是段落我是段落我是段落我是段落我是段落我是段落我是段落我是段落我是段落我是段落</p>
+<p>我是段落我是段落我是段落我是段落我是段落我是段落我是段落我是段落我是段落我是段落我是段落我是段落我是段落我是段落我是段落
+    我是段落我是段落我是段落我是段落我是段落我是段落我是段落我是段落我是段落我是段落我是段落</p>
+<p>我是段落我是段落我是段落我是段落我是段落我是段落我是段落我是段落我是段落我是段落我是段落我是段落我是段落我是段落我是段落
+    我是段落我是段落我是段落我是段落我是段落我是段落我是段落我是段落我是段落我是段落我是段落</p>
+<input type="text">
+</body>
+</html>
