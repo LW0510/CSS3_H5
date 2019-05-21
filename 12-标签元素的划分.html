@@ -2,39 +2,29 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title></title>
+    <title>块级标签与行内标签的转换</title>
     <style>
         div {
+            width: 200px;
+            height: 100px;
             background-color: red;
-        }
+            /* 让块级标签 --》 行内标签 */
+            display: inline;
 
-        p {
-            background: green;
-        }
+            /*  让标签隐藏： display : none; */
 
-        ul {
-            background: blue;
         }
-
-        li {
-            background: yellow;
-            width: 50%;
-        }
-
 
         a {
             background-color: skyblue;
-            /*  给定宽高没起作用*/
             width: 200px;
-            height: 20px;
+            /*行内标签 --》 块级标签*/
+            display: block;
         }
 
+        button {
 
-        button{
-            width: 100px;
-            height: 50px;
         }
-
     </style>
 </head>
 
@@ -42,23 +32,14 @@
 
 <!-- 块级标签：独占一行，可以随时改变宽高-->
 <div>11111</div>
-<p>我是段落</p>
-<ul>
-    <li>2222</li>
-    <li>3333</li>
-    <li>4444</li>
-</ul>
 
 <!--行内标签: 不能独占一行，而且外边距、内边距都不能改变-->
 <a href="">百度一下</a>
 <a href="">京东一下</a>
 <a href="">谷歌一下</a>
-<span>2222</span>
 
 
 <!--行内块级标签-->
 <button>点我1</button>
-<button>点我2</button>
-<button>点我3</button>
 </body>
 </html>
